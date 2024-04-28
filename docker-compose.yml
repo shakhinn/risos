@@ -14,7 +14,7 @@ services:
   tester:
     container_name: Hukumka-tester
     env_file:
-      - .env
+      - .env_example
     build:
       context: ./tester
       dockerfile: Dockerfile_tester
