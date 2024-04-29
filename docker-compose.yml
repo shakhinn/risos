@@ -2,6 +2,8 @@ version: "3"
 services:
   app:
     container_name: Hukumka-app
+    env_file:
+      - .env
     build:
       context: ./app
       dockerfile: Dockerfile_app
